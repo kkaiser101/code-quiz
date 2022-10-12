@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Document</title>
+</head>
+<body>
+  <!-- Div to hold our link to high scores -->
+  <div id="High_Scores"><button>High Scores</button></div>
+
+  <!-- Div to hold our timer -->
+  <div id="Timer">Time Left: <span id="gameclock"></span></div>
+
+  <!-- Wrapper div to hold the rest of the content on our screen -->
+  <section>
+
+    <!-- Div for the start screen -->
+    <div id="Begin"><button id="begin">Click here to begin</button></div>
+
+    <!-- Div for the questions -->
+    <div id="questions">
+        <form id="question1">
+            <label id="q1">What does HTML stand for?</label>
+            <select id="q1-options">
+                <option value="A">HyperText Markup Language</option>
+                <option value="B">HyperTechnological Mark Log</option>
+                <option value="C">HyperTech Microsoft Language</option>
+                <option value="D">I don't know</option>
+            </select>
+            <button id="submit1">Submit</button>
+
+            <p>You're answer is <span id = "correctornot1"></span></p>
+        </form>
+        <form id="question2">
+            <label id="q2">What does CSS stand for?</label>
+            <select id="q2-options">
+                <option value="A">Computer String Syntax</option>
+                <option value="B">Cascading Style Sheets</option>
+                <option value="C">Computational Style Sheets</option>
+                <option value="D">CPU Styling Sheet</option>
+            </select>
+            <button id="submit2">Submit</button>
+
+            <p>You're answer is <span id = "correctornot2"></span></p>
+
+        </form>
+    </div>
+
+    <!-- Div for the end screen -->
+    <div id="results">
+      <label id="result-page">Your Results</label>
+      <ul>
+        <li>Question 1: <span id="answer1"></span></li>
+        <li>Question 1: <span id="answer2"></span></li>
+      </ul>
+    </div>
+
+    <!-- Div to dynamically display feedback to the user -->
+
+  </section> 
+  <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
